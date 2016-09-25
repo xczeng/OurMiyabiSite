@@ -1,0 +1,38 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Miyabi{% endblock %}
+
+{% block head %}
+{{ super() }}
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='owl-carousel/owl.carousel.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='owl-carousel/owl.theme.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='owl-carousel/owl.transitions.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/new_style.css') }}">
+
+{% endblock %}
+
+
+{% block content %}
+<div id="owl-demo" class="owl-carousel owl-theme">
+  <div class="item"><img src="{{ url_for('static', filename='img/cover2.jpg') }}"></div>
+  <div class="item"><img src="{{ url_for('static', filename='img/cover3.jpg') }}"></div>
+  <div class="item"><img src="{{ url_for('static', filename='img/cover4.jpg') }}"></div>
+  <div class="item"><img src="{{ url_for('static', filename='img/cover5.jpg') }}"></div>
+  <div class="item"><img src="{{ url_for('static', filename='img/cover6.jpg') }}"></div>
+  <div class="item"><img src="{{ url_for('static', filename='img/cover7.jpg') }}"></div>
+  <div class="item"><img src="{{ url_for('static', filename='img/cover8.jpg') }}"></div>
+</div>
+{% endblock %}
+
+
+
+
+{% block scripts %}
+{{ super() }}
+<!-- Plugins JS -->
+<!--<script type="text/javascript" src="{{ url_for('static', filename='slick/slick.min.js') }}"></script>-->
+<!-- Theme JS -->
+<script src="{{ url_for('static', filename='js/new_js.js') }}"></script>
+<script src="{{ url_for('static', filename='owl-carousel/owl.carousel.js') }}"></script>
+{% endblock %}

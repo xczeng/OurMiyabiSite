@@ -1,0 +1,7 @@
+#ignore the templates and tutorial
+flasky/*
+unika/*
+Flusk-master/*
+
+#ignore virtual env
+app/venv

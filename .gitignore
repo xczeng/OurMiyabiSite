@@ -2,6 +2,7 @@
 flasky/*
 unika/*
 Flusk-master/*
+app/__pycache__
 
 #ignore virtual env
 app/venv

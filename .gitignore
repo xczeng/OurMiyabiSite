@@ -3,6 +3,7 @@ flasky/*
 unika/*
 Flusk-master/*
 app/__pycache__
+stretchy-navigation
 
 #ignore virtual env
 app/venv

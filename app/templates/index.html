@@ -11,9 +11,12 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/new_style.css') }}">
 
     <!-- nav-section CSS-->
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lora:700" rel="stylesheet">
+
 	<link rel="stylesheet" href="{{ url_for('static', filename='nav-section/css/reset.css') }}"> <!-- CSS reset -->
 	<link rel="stylesheet" href="{{ url_for('static', filename='nav-section/css/style.css') }}"> 
+	<link rel="stylesheet" href="{{ url_for('static', filename='headline-section/css/style.css') }}"> 
 {% endblock %}
 
 {% block content %}
@@ -28,5 +31,6 @@
 <script src="{{ url_for('static', filename='nav-section/js/modernizr.js') }}"></script> <!-- Modernizr -->
 <!-- conflict with owl <script src="{{ url_for('static', filename='nav-section/js/jquery-2.1.4.js') }}"></script> -->        
 <script src="{{ url_for('static', filename='nav-section/js/main.js') }}"></script> <!-- Resource jQuery -->
+<script src="{{ url_for('static', filename='headline-section/js/main.js') }}"></script> <!-- Resource jQuery -->
 
 {% endblock %}

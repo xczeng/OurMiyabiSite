@@ -5,8 +5,9 @@ $(document).ready(function() {
   owl.owlCarousel({
     navigation : true,
     singleItem : true,
+    lazyLoad: true,
     transitionStyle : "fadeUp",
-    autoPlay : 5000,
+    autoPlay : 6000,
   });
  
 });

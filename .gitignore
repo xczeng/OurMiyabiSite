@@ -4,6 +4,7 @@ unika/*
 Flusk-master/*
 app/__pycache__
 stretchy-navigation
+animated-headline
 
 #ignore virtual env
 app/venv

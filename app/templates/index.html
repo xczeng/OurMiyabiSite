@@ -4,32 +4,38 @@
 
 {% block head %}
 {{ super() }}
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='owl-carousel/owl.carousel.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='owl-carousel/owl.theme.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='owl-carousel/owl.transitions.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/new_style.css') }}">
-
     <!-- nav-section CSS-->
     <link href="https://fonts.googleapis.com/css?family=Lora:700" rel="stylesheet">
-
 	<link rel="stylesheet" href="{{ url_for('static', filename='nav-section/css/reset.css') }}"> <!-- CSS reset -->
 	<link rel="stylesheet" href="{{ url_for('static', filename='nav-section/css/style.css') }}"> 
+
+    <!-- hero-section CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='hero-section/css/owl.carousel.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='hero-section/css/owl.theme.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='hero-section/css/owl.transitions.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='hero-section/css/style.css') }}">
+
+    <!-- headline-section CSS-->
 	<link rel="stylesheet" href="{{ url_for('static', filename='headline-section/css/style.css') }}"> 
+
+    <!-- services-section CSS-->
+	<link rel="stylesheet" href="{{ url_for('static', filename='services-section/css/style.css') }}"> 
 {% endblock %}
 
 {% block content %}
     {% include 'nav-section.html' %}
     {% include 'hero-section.html' %}
+    {% include 'services-section.html' %}
 {% endblock %}
 
 {% block scripts %}
 {{ super() }}
-<script src="{{ url_for('static', filename='js/new_js.js') }}"></script>
-<script src="{{ url_for('static', filename='owl-carousel/owl.carousel.js') }}"></script>
-<script src="{{ url_for('static', filename='nav-section/js/modernizr.js') }}"></script> <!-- Modernizr -->
-<!-- conflict with owl <script src="{{ url_for('static', filename='nav-section/js/jquery-2.1.4.js') }}"></script> -->        
-<script src="{{ url_for('static', filename='nav-section/js/main.js') }}"></script> <!-- Resource jQuery -->
+<script src="{{ url_for('static', filename='nav-section/js/modernizr.js') }}"></script> 
+<script src="{{ url_for('static', filename='nav-section/js/main.js') }}"></script> 
+
+<script src="{{ url_for('static', filename='hero-section/js/main.js') }}"></script>
+<script src="{{ url_for('static', filename='hero-section/js/owl.carousel.js') }}"></script>
+
 <script src="{{ url_for('static', filename='headline-section/js/main.js') }}"></script> <!-- Resource jQuery -->
 
 {% endblock %}

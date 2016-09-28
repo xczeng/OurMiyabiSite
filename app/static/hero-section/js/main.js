@@ -9,5 +9,12 @@ $(document).ready(function() {
     transitionStyle : "fadeUp",
     autoPlay : 6000,
   });
+  
+  $("#owl-feature").owlCarousel({
+    items : 4,
+    lazyLoad : true,
+    navigation : true
+  }); 
+ 
  
 });

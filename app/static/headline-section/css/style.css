@@ -1267,3 +1267,38 @@ xpush
     transform: translateX(100%);
   }
 }
+
+.cd-intro {
+    position: absolute;
+    top: 29%;
+    left: 5%;
+    right: 5%;
+    color: #f5f5f5;
+    width: 90%;
+    max-width: 768px;
+    text-align: center;
+}
+
+.cd-headline span {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-family: 'Lora', serif;
+    ;
+}
+
+.cd-headline span#store-name {
+    font-size: 5rem;
+    line-height: 1.2;
+    font-family: 'Lora', serif;
+    ;
+}
+
+.layer {
+    background-color: rgba(0, 0, 0, 0.09);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+

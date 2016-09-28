@@ -5,6 +5,8 @@ Flusk-master/*
 app/__pycache__
 stretchy-navigation
 animated-headline
+app/static/nav-section/img/cd-sprite-1.svg
+app/static/nav-section/img/symbol-defs.svg
 
 #ignore virtual env
 app/venv
